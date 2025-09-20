@@ -2,41 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* SafeMind Design System - Child Safety Platform
+Clean white base with gentle pastel accents for warmth and trust
 */
 
 @layer base {
   :root {
+    /* Core backgrounds - Pure white for safety and cleanliness */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 215 25% 27%;
 
+    /* Card components */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 27%;
 
+    /* Popover components */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 27%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Soft, trustworthy blue */
+    --primary: 213 94% 68%;
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 213 100% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Gentle gray for subtle elements */
+    --secondary: 215 20% 96%;
+    --secondary-foreground: 215 25% 27%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted tones */
+    --muted: 210 20% 97%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Warm, friendly pastels */
+    --accent: 330 85% 96%;
+    --accent-foreground: 330 50% 30%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Safety colors */
+    --success: 142 76% 73%;
+    --success-foreground: 142 50% 25%;
+    --success-soft: 142 85% 96%;
+    
+    --warning: 48 96% 89%;
+    --warning-foreground: 45 93% 47%;
+    
+    --destructive: 0 85% 75%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Interactive elements */
+    --border: 215 30% 92%;
+    --input: 215 30% 94%;
+    --ring: 213 94% 68%;
 
-    --radius: 0.5rem;
+    /* Beautiful gradients for SafeMind */
+    --gradient-primary: linear-gradient(135deg, hsl(213 94% 68%), hsl(213 94% 78%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 73%), hsl(142 76% 83%));
+    --gradient-soft: linear-gradient(135deg, hsl(213 100% 98%), hsl(330 100% 98%));
+    
+    /* Soft shadows for depth */
+    --shadow-soft: 0 2px 8px -2px hsl(213 20% 80% / 0.15);
+    --shadow-glow: 0 0 20px hsl(213 94% 68% / 0.15);
+    --shadow-card: 0 1px 3px hsl(213 20% 80% / 0.1);
+
+    /* Border radius system */
+    --radius: 1rem;
+    --radius-soft: 1.5rem;
 
     --sidebar-background: 0 0% 98%;
 
