@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SafeMindLogo } from "./SafeMindLogo";
 import { Shield, Heart, Users, ArrowRight } from "lucide-react";
-import heroImage from "@/assets/safemind-hero.jpg";
+import heroImage from "@/assets/safemind-logo.jpg";
 
 interface WelcomeHeroProps {
   onGetStarted: () => void;
@@ -91,8 +91,8 @@ export const WelcomeHero = ({ onGetStarted }: WelcomeHeroProps) => {
             <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-2xl opacity-20 transform scale-110"></div>
             <img 
               src={heroImage} 
-              alt="SafeMind AI protecting children online"
-              className="relative rounded-3xl shadow-glow w-full h-auto"
+              alt="SafeMind - Protecting children with colorful safety icons"
+              className="relative rounded-3xl shadow-glow w-full h-auto max-w-md mx-auto"
             />
           </div>
         </div>
